@@ -12,6 +12,7 @@ package com.xpcf.algorithm;
  * , 在所有 Java 提交中击败了
  * 5.01%
  * 的用户
+ *
  * @author XPCF
  * @version 1.0
  * @date 3/27/2021 2:00 PM
