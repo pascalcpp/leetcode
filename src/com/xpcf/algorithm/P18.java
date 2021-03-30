@@ -25,9 +25,9 @@ public class P18 {
 
         List ans = new ArrayList();
 
-        for (int i = 0; i < ; i++) {
-            
-        }
+//        for (int i = 0; i < ; i++) {
+//
+//        }
 
         return ans;
 
