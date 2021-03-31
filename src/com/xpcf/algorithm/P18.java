@@ -1,9 +1,7 @@
 package com.xpcf.algorithm;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author XPCF
@@ -13,12 +11,24 @@ import java.util.List;
 public class P18 {
 
     public static void main(String[] args) {
-        P18 p = new P18();
-        p.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
+//        P18 p = new P18();
+//        p.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
+
+
+        String s = " sadasdas";
+//        int[] a = {1, 2, 3};
+//
+//        ArrayList<Object> list = new ArrayList<>();
+//        Iterator<Object> iterator = list.iterator();
+//
+//        List<Integer> collect = Arrays.stream(a).boxed().collect(Collectors.toList());
+//        Integer[] integers = collect.toArray(new Integer[0]);
+//        System.out.println();
 
     }
 
     public List<List<Integer>> fourSum(int[] nums, int target) {
+
 
         List<List<Integer>> ans = new ArrayList<>();
         Arrays.sort(nums);
