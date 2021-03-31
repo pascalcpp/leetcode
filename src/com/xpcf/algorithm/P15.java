@@ -14,8 +14,7 @@ public class P15 {
 
     public static void main(String[] args) {
 
-        P15 p = new P15();
-        p.threeSum(new int[]{-1,0,1,2,-1,-4});
+
 
     }
 
