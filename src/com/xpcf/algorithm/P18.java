@@ -14,7 +14,7 @@ public class P18 {
 
     public static void main(String[] args) {
         P18 p = new P18();
-        p.fourSum(new int[]{1,-2,-5,-4,-3,3,3,5}, -11);
+        p.fourSum(new int[]{1, 0, -1, 0, -2, 2}, 0);
 
     }
 
@@ -31,43 +31,51 @@ public class P18 {
             if (first != 0 && nums[first] == nums[first - 1]) {
                 continue;
             }
+            if (nums[first] + nums[first + 1] + nums[first + 2] + nums[first + 3] > target) {
+                break;
+            }
+
+            if (nums[first] + nums[length - 1] + nums[length - 2] + nums[length - 3] < target) {
+                continue;
+            }
+
 
             for (int second = first + 1; second < length - 2; ++second) {
                 if (second != first + 1 && nums[second] == nums[second - 1]) {
                     continue;
                 }
-                int found = target - nums[first] - nums[second];
-                // pruning
 
-                int fourth = length - 1;
-                for (int third = second + 1; third < length - 1; ++third) {
-                    if (third != second + 1 && nums[third] == nums[third - 1]) {
-                        continue;
-                    }
-
-                    while (third < fourth && nums[third] + nums[fourth] > found) {
-                        --fourth;
-                    }
-//
-//                    while (third < fourth && nums[third] + nums[fourth] < found) {
-//                        ++third;
-//                    }
-
-                    if (third == fourth) {
-                        break;
-                    }
-
-                    if (nums[third] + nums[fourth] == found) {
-                        List<Integer> list = new ArrayList<>();
-                        list.add(nums[first]);
-                        list.add(nums[second]);
-                        list.add(nums[third]);
-                        list.add(nums[fourth]);
-                        ans.add(list);
-                    }
-
+                if (nums[first] + nums[second] + nums[second + 1] + nums[second + 2] > target) {
+                    break;
                 }
 
+                if (nums[first] + nums[second] + nums[length - 1] + nums[length - 2] < target) {
+                    continue;
+                }
+
+                int fourth = length - 1;
+                int third = second + 1;
+                while (third < fourth) {
+                    int sum = nums[first] + nums[second] + nums[third] + nums[fourth];
+                    if (sum == target) {
+                        ans.add(Arrays.asList(nums[first], nums[second], nums[third], nums[fourth]));
+                        while (third < fourth && nums[third] == nums[third + 1]) {
+                            ++third;
+                        }
+                        ++third;
+
+                        while (third < fourth && nums[fourth] == nums[fourth - 1]) {
+                            --fourth;
+                        }
+                        --fourth;
+
+
+                    } else if (sum < target) {
+                        ++third;
+                    } else {
+                        --fourth;
+                    }
+                }
             }
         }
 
