@@ -3,10 +3,7 @@ package com.xpcf.algorithm;
 import com.sun.deploy.util.ArrayUtil;
 
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 /**
  * @author XPCF
@@ -17,21 +14,36 @@ public class Test {
 
 
     public static void main(String[] args) {
+        LRUCache lruCache = new LRUCache(12);
 
-        InputStream in = System.in;
-        System.out.println();
-
-
-    }
-
-    static List<String> list = new ArrayList<String>();
-
-    static void cha_62(int n) {
-        if (n >= 62) {
-            cha_62(n / 62);
+        for (int i = 0; i < 17; i++) {
+            lruCache.put(i, i);
         }
-        list.add("[" + n % 62 + "]");
     }
+
+
+    static class LRUCache extends LinkedHashMap<Integer, Integer> {
+        private int capacity;
+
+        public LRUCache(int capacity) {
+            super(capacity, 0.75F, true);
+            this.capacity = capacity;
+        }
+
+        public int get(int key) {
+            return super.getOrDefault(key, -1);
+        }
+
+        public void put(int key, int value) {
+            super.put(key, value);
+        }
+
+        @Override
+        protected boolean removeEldestEntry(Map.Entry<Integer, Integer> eldest) {
+            return size() > capacity;
+        }
+    }
+
 
 
 }

@@ -1,24 +1,19 @@
 package com.xpcf.algorithm;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author XPCF
  * @version 1.0
- * @date 4/1/2021 6:46 AM
+ * @date 4/2/2021 12:41 PM
  */
-public class P144 {
+public class P94 {
 
-    public static void main(String[] args) throws InterruptedException {
-
-
+    public static void main(String[] args) {
 
     }
-
 
     static class TreeNode {
         int val;
@@ -33,25 +28,25 @@ public class P144 {
         }
     }
 
-    public List<Integer> preOrderTraversal(TreeNode root) {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
         if (root == null) {
             return ans;
         }
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
+        while (root != null || !stack.isEmpty()) {
 
-        while (!stack.isEmpty()) {
-            TreeNode top = stack.pop();
-            ans.add(top.val);
-            if (top.right != null) {
-                stack.push(top.right);
+            while (root != null) {
+                stack.push(root);
+                root = root.left;
             }
-            if (top.left != null) {
-                stack.push(top.left);
-            }
+            root = stack.pop();
 
+            ans.add(root.val);
+            root = root.right;
         }
+
+
         return ans;
     }
 }
