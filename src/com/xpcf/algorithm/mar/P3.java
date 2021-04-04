@@ -1,7 +1,6 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
 import java.util.HashSet;
-import java.util.Hashtable;
 import java.util.Set;
 
 /**

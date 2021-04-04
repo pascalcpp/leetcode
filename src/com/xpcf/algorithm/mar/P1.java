@@ -1,4 +1,4 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,7 +1,8 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author XPCF

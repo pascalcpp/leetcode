@@ -1,8 +1,4 @@
-package com.xpcf.algorithm;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+package com.xpcf.algorithm.mar;
 
 /**
  * @author xpcf

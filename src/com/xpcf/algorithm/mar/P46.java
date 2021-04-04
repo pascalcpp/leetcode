@@ -1,9 +1,8 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
-import com.sun.deploy.util.ArrayUtil;
-
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author XPCF

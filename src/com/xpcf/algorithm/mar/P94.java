@@ -1,4 +1,4 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,18 +34,19 @@ public class P94 {
             return ans;
         }
         Stack<TreeNode> stack = new Stack<>();
+
         while (root != null || !stack.isEmpty()) {
 
             while (root != null) {
                 stack.push(root);
                 root = root.left;
             }
-            root = stack.pop();
 
+            root = stack.pop();
             ans.add(root.val);
             root = root.right;
-        }
 
+        }
 
         return ans;
     }

@@ -1,4 +1,4 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +39,7 @@ public class P145 {
 
         Stack<TreeNode> stack = new Stack<>();
         TreeNode prev = null;
+
         while (root != null || !stack.isEmpty()) {
 
             while (root != null) {
@@ -47,7 +48,6 @@ public class P145 {
             }
 
             root = stack.pop();
-
             if (root.right == null || root.right == prev) {
                 ans.add(root.val);
                 prev = root;
@@ -56,7 +56,6 @@ public class P145 {
                 stack.push(root);
                 root = root.right;
             }
-
 
         }
 

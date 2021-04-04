@@ -1,4 +1,4 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
 /**
  * @author XPCF

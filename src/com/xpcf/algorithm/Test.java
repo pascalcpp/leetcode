@@ -14,11 +14,8 @@ public class Test {
 
 
     public static void main(String[] args) {
-        LRUCache lruCache = new LRUCache(12);
-
-        for (int i = 0; i < 17; i++) {
-            lruCache.put(i, i);
-        }
+        int[][] ints = new int[][]{{1, 2}, {2, 3}, {4, 5}};
+        System.out.println(ints[2][0]);
     }
 
 
@@ -43,7 +40,6 @@ public class Test {
             return size() > capacity;
         }
     }
-
 
 
 }

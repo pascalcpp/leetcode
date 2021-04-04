@@ -1,10 +1,8 @@
-package com.xpcf.algorithm;
+package com.xpcf.algorithm.mar;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
-import java.util.concurrent.TimeUnit;
 
 /**
  * @author XPCF
@@ -39,19 +37,19 @@ public class P144 {
             return ans;
         }
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
 
-        while (!stack.isEmpty()) {
-            TreeNode top = stack.pop();
-            ans.add(top.val);
-            if (top.right != null) {
-                stack.push(top.right);
-            }
-            if (top.left != null) {
-                stack.push(top.left);
+        while (root != null || !stack.isEmpty()) {
+
+            while (root != null) {
+                ans.add(root.val);
+                stack.push(root);
+                root = root.left;
             }
 
+            root = stack.pop();
+            root = root.right;
         }
+
         return ans;
     }
 }
