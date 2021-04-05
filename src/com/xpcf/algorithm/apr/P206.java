@@ -32,7 +32,6 @@ public class P206 {
             return null;
         }
 
-
         ListNode cur = head;
         ListNode prev = null;
         while (cur != null) {
@@ -41,6 +40,7 @@ public class P206 {
             prev = cur;
             cur = next;
         }
+
         return prev;
     }
 }
