@@ -1,5 +1,7 @@
 package com.xpcf.algorithm.apr;
 
+import java.util.Stack;
+
 /**
  * @author XPCF
  * @version 1.0
@@ -9,104 +11,42 @@ public class P20 {
 
     public static void main(String[] args) {
         P20 p = new P20();
-        System.out.println(p.isValid("[[[]"));
+        System.out.println(p.isValid("()"));
     }
-    int cur = 0;
-    int len;
-
-
 
     public boolean isValid(String s) {
 
+        int len = s.length();
+        Stack<Character> stack = new Stack<>();
 
-        len = s.length();
-        while (cur < len) {
-            if (!parseValue(s)) {
-                return false;
+
+        for (int i = 0; i < len; i++) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
+                stack.push(s.charAt(i));
+            } else {
+
+                if (stack.isEmpty() || !chooseBracket(s.charAt(i), stack.pop())) {
+                    return false;
+                }
+
             }
+        }
+        if (!stack.isEmpty()) {
+            return false;
         }
         return true;
     }
 
-    public boolean parseValue(String s) {
-
-        if (cur + 1 >= len) {
-            return false;
-        }
-        switch (s.charAt(cur)) {
+    public boolean chooseBracket(char c, char top) {
+        switch (top) {
             case '(':
-                return parseAngle(s);
+                return ')' == c;
             case '[':
-                return parseMid(s);
+                return ']' == c;
             case '{':
-                return parseCurly(s);
+                return '}' == c;
         }
         return false;
     }
 
-    public boolean parseAngle(String s) {
-
-        if (s.charAt(++cur) == ')') {
-            ++cur;
-            return true;
-        } else {
-
-            while (s.charAt(cur) != ')') {
-                if (!parseValue(s)) {
-                    return false;
-                }
-                if (cur >= len) {
-                    return false;
-                }
-            }
-            ++cur;
-            return true;
-        }
-
-    }
-
-    public boolean parseMid(String s) {
-
-        if (s.charAt(++cur) == ']') {
-            ++cur;
-            return true;
-        } else {
-
-            while (s.charAt(cur) != ']') {
-                if (!parseValue(s)) {
-                    return false;
-                }
-                if (cur >= len) {
-                    return false;
-                }
-            }
-            ++cur;
-            return true;
-
-        }
-
-
-    }
-
-    public boolean parseCurly(String s) {
-
-        if (s.charAt(++cur) == '}') {
-            ++cur;
-            return true;
-        } else {
-
-
-            while (s.charAt(cur) != '}') {
-                if (!parseValue(s)) {
-                    return false;
-                }
-                if (cur >= len) {
-                    return false;
-                }
-            }
-            ++cur;
-            return true;
-
-        }
-    }
 }
