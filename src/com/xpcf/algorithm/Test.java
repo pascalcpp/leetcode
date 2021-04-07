@@ -1,7 +1,8 @@
 package com.xpcf.algorithm;
 
 
-
+import java.util.HashMap;
+import java.util.Set;
 
 /**
  * @author XPCF
@@ -11,14 +12,12 @@ package com.xpcf.algorithm;
 public class Test {
 
 
-    int num = 0;
+    public static void main(String[] args) {
+        HashMap<Object, Object> map = new HashMap<>();
+        Set<Object> objects = map.keySet();
+        for (Object object : objects) {
 
-    public void methodA() {
-
-    }
-
-    public void methodB() {
-        methodA();
+        }
     }
 
 
