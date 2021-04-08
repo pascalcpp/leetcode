@@ -1,6 +1,8 @@
 package com.xpcf.algorithm;
 
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Set;
 
@@ -13,11 +15,7 @@ public class Test {
 
 
     public static void main(String[] args) {
-        HashMap<Object, Object> map = new HashMap<>();
-        Set<Object> objects = map.keySet();
-        for (Object object : objects) {
 
-        }
     }
 
 
