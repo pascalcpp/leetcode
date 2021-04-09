@@ -12,21 +12,20 @@ import java.util.concurrent.TimeUnit;
 public class Test {
 
 
-    @Override
-    protected void finalize() throws Throwable {
-        System.out.println("gc");
+    int a;
+    volatile int v1 = 1;
+    volatile int v2 = 2;
+    void readAndWrite() {
+        int i = v1; // 第一个volatile读
+        int j = v2; // 第二个volatile读
+        a = i + j; // 普通写
+        v1 = i + 1; // 第一个volatile写
+        v2 = j * 2; // 第二个 volatile写
     }
+
 
     public static void main(String[] args) throws InterruptedException {
 
-        List<Test> list = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            list.add(new Test());
-        }
-
-        list.clear();
-        System.gc();
-        TimeUnit.SECONDS.sleep(10);
     }
 
 
