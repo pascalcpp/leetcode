@@ -1,10 +1,8 @@
 package com.xpcf.algorithm;
 
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author XPCF
@@ -14,8 +12,21 @@ import java.util.Set;
 public class Test {
 
 
-    public static void main(String[] args) {
+    @Override
+    protected void finalize() throws Throwable {
+        System.out.println("gc");
+    }
 
+    public static void main(String[] args) throws InterruptedException {
+
+        List<Test> list = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            list.add(new Test());
+        }
+
+        list.clear();
+        System.gc();
+        TimeUnit.SECONDS.sleep(10);
     }
 
 
