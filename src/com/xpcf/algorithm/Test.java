@@ -14,16 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class Test {
 
 
-    public static void main(String[] args) throws InterruptedException {
 
-        SingleCircleLinkedList<Integer> list = new SingleCircleLinkedList<>();
-        list.addLast(1);
-        list.addLast(2);
-        list.addLast(3);
-        list.reset();
-        list.remove();
-        System.out.println();
-    }
 
 
 

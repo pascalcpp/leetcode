@@ -23,7 +23,7 @@ public class SingleCircleLinkedList<E> {
     /**
      * point to current node
      */
-    private Node<E> curNode;
+    public Node<E> curNode;
 
 
     /**
@@ -46,8 +46,10 @@ public class SingleCircleLinkedList<E> {
             newNode.next = newNode;
             newNode.prev = newNode;
         } else {
+            tail.next = newNode;
             newNode.prev = tail;
             newNode.next = head;
+            head.prev = newNode;
             tail = newNode;
         }
 
@@ -57,18 +59,29 @@ public class SingleCircleLinkedList<E> {
     /**
      * remove curNode at linked list
      */
-    public void remove() {
+    public E remove() {
 
+        E element = curNode.element;
         if (head == tail) {
             head = null;
             tail = null;
+            curNode = null;
         } else {
             Node<E> prev = curNode.prev;
             Node<E> next = curNode.next;
             prev.next = next;
             next.prev = prev;
-        }
 
+            if (curNode == head) {
+                head = next;
+            }
+
+            if (curNode == tail) {
+                tail = prev;
+            }
+            curNode = curNode.next;
+        }
+        return element;
     }
 
     /**
@@ -85,11 +98,11 @@ public class SingleCircleLinkedList<E> {
         curNode = head;
     }
 
-    static class Node<E> {
+    public static class Node<E> {
 
         Node<E> next;
         Node<E> prev;
-        E element;
+        public E element;
 
         Node(Node<E> next, Node<E> prev, E element) {
             this.next = next;
