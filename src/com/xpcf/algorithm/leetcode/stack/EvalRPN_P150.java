@@ -25,24 +25,25 @@ public class EvalRPN_P150 {
         int len = tokens.length;
         for (int i = 0; i < len; i++) {
             int n1, n2;
-            if (tokens[i].equals("*")) {
+            String token = tokens[i];
+            if (token.equals("*")) {
                 n1 = stack.pop();
                 n2 = stack.pop();
                 stack.push(n2 * n1);
-            } else if (tokens[i].equals("/")) {
+            } else if (token.equals("/")) {
                 n1 = stack.pop();
                 n2 = stack.pop();
                 stack.push(n2 / n1);
-            } else if (tokens[i].equals("+")) {
+            } else if (token.equals("+")) {
                 n1 = stack.pop();
                 n2 = stack.pop();
                 stack.push(n2 + n1);
-            } else if (tokens[i].equals("-")) {
+            } else if (token.equals("-")) {
                 n1 = stack.pop();
                 n2 = stack.pop();
                 stack.push(n2 - n1);
             } else {
-                stack.push(Integer.parseInt(tokens[i]));
+                stack.push(Integer.parseInt(token));
             }
 
 
