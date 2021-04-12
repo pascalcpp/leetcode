@@ -29,9 +29,24 @@ public class JosephProblem {
             list.next();
             System.out.println(list.remove());
         }
+        Node[] ars = new Node[10];
 
         System.out.println("-----------");
-        josephWithLinkedList();
+//        josephWithLinkedList();
+        int f = f(8, 3);
+        System.out.println("------------");
+        System.out.println(f);
+    }
+
+    static int f(int n, int m){
+        if(n == 1)   return n;
+        int r = (f(n - 1, m) + m - 1) % n + 1;
+        System.out.println(r);
+        return r;
+    }
+
+    int f2(int n, int m){
+        return n == 1 ? n : (f2(n - 1, m) + m - 1) % n + 1;
     }
 
 
@@ -97,7 +112,9 @@ public class JosephProblem {
                     ++dead;
                 }
             }
-
+//            if (++cur > 7) {
+//                cur = 0;
+//            }
             cur = ++cur & 7;
 
         }
