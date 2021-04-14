@@ -12,7 +12,7 @@ public class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
-    TreeNode parent;
+
     TreeNode() {
     }
 
@@ -25,4 +25,6 @@ public class TreeNode {
         this.left = left;
         this.right = right;
     }
+
 }
+
