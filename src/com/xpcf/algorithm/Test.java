@@ -14,79 +14,15 @@ import java.util.concurrent.TimeUnit;
  */
 public class Test {
 
-    public static final ThreadLocal<Long> longThreadLocal = new ThreadLocal<>();
-
-    public static final ThreadLocal<String> stringThreadLocal = new ThreadLocal<>();
-
 
     public static void main(String[] args) {
 
-
-    }
-
-    /**
-     * Definition for a binary tree node.
-     * public class TreeNode {
-     * int val;
-     * TreeNode left;
-     * TreeNode right;
-     * TreeNode() {}
-     * TreeNode(int val) { this.val = val; }
-     * TreeNode(int val, TreeNode left, TreeNode right) {
-     * this.val = val;
-     * this.left = left;
-     * this.right = right;
-     * }
-     * }
-     */
-
-    public static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode() {
-        }
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
-    }
-
-    public List<List<Integer>> levelOrder(TreeNode root) {
-
-        List<List<Integer>> ans = new ArrayList<>();
-        if (root == null) {
-            return ans;
-        }
-        ArrayDeque<TreeNode> deque = new ArrayDeque<>();
-        deque.offer(root);
-
-        int levelSize = 1;
-        List<Integer> levelList = new ArrayList<>();
-        while (!deque.isEmpty()) {
-            TreeNode node = deque.poll();
-            levelList.add(node.val);
-            --levelSize;
-            if (node.left != null) {
-                deque.add(node.left);
-            }
-            if (node.right != null) {
-                deque.add(node.right);
-            }
-            if (levelSize == 0) {
-                ans.add(levelList);
-                levelList = new ArrayList<>();
-                levelSize = deque.size();
-            }
-        }
-        return ans;
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put()
+        String s1 = new String("abcd");
+        String s2 = new String("abcd");
+        System.out.println(s1.hashCode() + "           " + s2.hashCode());
+        System.out.println(s1 == s2);
     }
 
 

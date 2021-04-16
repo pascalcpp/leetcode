@@ -8,19 +8,20 @@ package com.xpcf.algorithm.leetcode.binarytree;
 public class Flatten_P114 {
 
     public void flatten(TreeNode root) {
-        TreeNode curr = root;
-        while (curr != null) {
-            if (curr.left != null) {
-                TreeNode next = curr.left;
-                TreeNode predecessor = next;
+        
+        TreeNode cur = root;
+        while (cur != null) {
+            if (cur.left != null) {
+                TreeNode left = cur.left;
+                TreeNode predecessor = left;
                 while (predecessor.right != null) {
                     predecessor = predecessor.right;
                 }
-                predecessor.right = curr.right;
-                curr.left = null;
-                curr.right = next;
+                predecessor.right = cur.right;
+                cur.right = left;
+                cur.left = null;
             }
-            curr = curr.right;
+            cur = cur.right;
         }
     }
 
