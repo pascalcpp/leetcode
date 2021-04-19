@@ -14,32 +14,53 @@ public class LevelOrderBottom {
         if (root == null) {
             return ans;
         }
-        Deque<TreeNode> deque = new ArrayDeque<>();
+        ArrayDeque<TreeNode> deque = new ArrayDeque<>();
         deque.offer(root);
-        int levelSize = deque.size();
-        List<Integer> levelList = new ArrayList<>();
-        while(!deque.isEmpty()) {
 
-            TreeNode node = deque.poll();
-            levelList.add(node.val);
-            --levelSize;
-            if (node.left != null) {
-                deque.offer(node.left);
+        while (!deque.isEmpty()) {
+            List<Integer> list = new ArrayList<>();
+            int size = deque.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = deque.poll();
+                list.add(node.val);
+                if (node.left != null) {
+                    deque.offer(node.left);
+                }
+
+                if (node.right != null) {
+                    deque.offer(node.right);
+                }
             }
-
-
-            if (node.right != null) {
-                deque.offer(node.right);
-            }
-
-            if (levelSize == 0) {
-                ans.add(0, levelList);
-                levelSize = deque.size();
-                levelList = new ArrayList<>();
-            }
-
+            ans.addFirst(list);
         }
+
         return ans;
     }
+
+    public List<List<Integer>> levelOrderBottom2(TreeNode root) {
+        List<List<Integer>> levelOrder = new LinkedList<List<Integer>>();
+        if (root == null) {
+            return levelOrder;
+        }
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            List<Integer> level = new ArrayList<Integer>();
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                TreeNode node = queue.poll();
+                level.add(node.val);
+                if (node.left != null) {
+                    queue.offer(node.left);
+                }
+                if (node.right != null) {
+                    queue.offer(node.right);
+                }
+            }
+            levelOrder.add(0, level);
+        }
+        return levelOrder;
+    }
+
 
 }
