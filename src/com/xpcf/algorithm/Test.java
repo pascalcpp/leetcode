@@ -1,11 +1,8 @@
 package com.xpcf.algorithm;
 
 
-import com.xpcf.algorithm.util.SingleCircleLinkedList;
-
-import java.lang.reflect.Array;
-import java.util.*;
-import java.util.concurrent.TimeUnit;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author XPCF
@@ -15,13 +12,11 @@ import java.util.concurrent.TimeUnit;
 public class Test {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, InvocationTargetException {
+        Constructor<Inst> declaredConstructor = Inst.class.getDeclaredConstructor();
+        declaredConstructor.setAccessible(true);
+        Inst =inst = declaredConstructor.newInstance();
 
-        HashMap<Object, Object> map = new HashMap<>();
-        String s1 = new String("abcd");
-        String s2 = new String("abcd");
-        System.out.println(s1.hashCode() + "           " + s2.hashCode());
-        System.out.println(s1 == s2);
     }
 
 
