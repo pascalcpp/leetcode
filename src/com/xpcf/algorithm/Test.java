@@ -13,9 +13,6 @@ public class Test {
 
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, InvocationTargetException {
-        Constructor<Inst> declaredConstructor = Inst.class.getDeclaredConstructor();
-        declaredConstructor.setAccessible(true);
-        Inst =inst = declaredConstructor.newInstance();
 
     }
 
