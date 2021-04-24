@@ -13,6 +13,10 @@ public class Test {
 
 
     public static void main(String[] args) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException, InvocationTargetException {
+        Hello hello = new Test().new Hello();
+    }
+
+    class Hello {
 
     }
 
