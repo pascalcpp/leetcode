@@ -3,6 +3,7 @@ package com.xpcf.algorithm;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.util.HashMap;
 
 /**
  * @author XPCF
@@ -13,11 +14,10 @@ public class Test {
 
 
     public static void main(String[] args) {
-        while (true) {
-            while (true) {
-                return;
-            }
-        }
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("asd", null);
+        map.put(null, 1);
+        System.out.println(map.get("asd"));
     }
 
 
