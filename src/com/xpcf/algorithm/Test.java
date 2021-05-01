@@ -17,6 +17,7 @@ public class Test {
     public static void main(String[] args) {
         LinkedHashSet<Object> set = new LinkedHashSet<>();
         set.add("asd");
+
     }
 
 
