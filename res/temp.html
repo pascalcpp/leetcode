@@ -1,0 +1,2488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>临床分子生物学检验-考试</title><link rel="stylesheet" type="text/css" href="/space/new/moocIndex/css/teacherHeader.css"/>
+    <link href="/space/new/moocIndex/css/moocLeft.css" type="text/css" rel="stylesheet"/><link href="/space/new/moocIndex/css/CeYan.css?v=2020-1120-1222" type="text/css" rel="stylesheet"/>
+    <link href="/space/exam/answerCard/style/css.css" type="text/css" rel="stylesheet"/>
+    <link href="/css/courselist/teacherclass.css?v=20160407" rel="stylesheet" type="text/css" />
+    <link href="/css/courselist/teacherclassCH.css" rel="stylesheet" type="text/css" /><link href="/style/percentBar.css" rel="stylesheet" type="text/css" />
+    <link href="/css/connLine.css" rel="stylesheet" type="text/css" />
+    <link href="/css/questionBank/questionBankUsual.css?v=2019-1120-1400" type="text/css" rel="stylesheet"/>	<script src="/space/new/js/jquery.min.js"></script>
+    <script src="/space/new/js/right.js?v=2019-1025-1800"></script>
+    <script type="text/javascript" src="/space/exam/answerCard/js/slider.js"></script>
+    <script src="/js/exam/phone/attach-mark-forPC.js?v=2020-0822-1700"></script>
+    <link href="/space/new/moocIndex/css/bType.css" type="text/css" rel="stylesheet"/>
+    <script src="/space/work/js/preview-attach.js?v=2020-1016-1530"></script><link href="/css/work/viewer.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery.md5.js"></script>
+    <script type="text/javascript" src="/space/work/js/viewer-jquery.min.js"></script>
+    <script type="text/javascript">
+        try{
+            $(function(){
+                var imgList = $(".TiMu").find("div img:not(.workAttach img, .attach img, .attachNew img, .stuAnswerArea img, .popClose img)");
+                for (var i = 0, len = imgList.size(); i < len; i++) {
+                    var src = imgList.eq(i).attr("src");
+                    if(src){
+                        var index = src.indexOf("375_1024");
+                        if (index != -1) {
+                            src = src.replace("375_1024", "origin");
+                        }
+                        var index2 = src.indexOf("750_1024");
+                        if (index2 != -1) {
+                            src = src.replace("750_1024", "origin");
+                        }
+                        imgList.eq(i).attr("data-original", src);
+                    }
+                }
+                $(".TiMu").find("div img:not(.workAttach img, .attach img, .attachNew img, .stuAnswerArea img, .popClose img)").viewer({
+                    url : 'data-original',
+                });
+            })
+        }catch(error){}
+    </script><script type="text/javascript" src="/js/gvChart/jsapi.js"></script>
+    <script type="text/javascript" src="/js/gvChart/corechart.js"></script>
+    <script type="text/javascript" src="/js/gvChart/jquery.gvChart-1.0.1.min.js"></script>
+    <script type="text/javascript" src="/js/gvChart/jquery.ba-resize.min.js"></script>
+
+    <script type="text/javascript">
+        gvChartInit();
+
+        var title=["收回","查看答案"];
+        function toggleDivStatistic(event){
+            var id=$(event).attr("id");
+            var nowTitle=$(event).text();
+            if(nowTitle==title[0]){
+                $(event).text(title[1]);
+                $("#"+id+"_div").slideUp();
+                $("#pieDiv_"+id).slideUp();
+            }
+            if(nowTitle==title[1]){
+                $(event).text(title[0]);
+                $("#"+id+"_div").slideDown();
+                $("#pieDiv_"+id).slideDown();
+            }
+
+        }
+
+    </script><script>
+    function hideAndShow(id) {
+        if($("#div" + id).is(":hidden")) {
+            $("#div" + id).css("display","block");
+        } else {
+            $("#div" + id).css("display","none");
+        }
+    }
+    $(function(){
+
+        $(".TiMu").hover(function(){
+            $(this).find(".sc").show();
+        },function(){
+            $(this).find(".sc").hide();
+        })
+
+    })
+</script>
+
+    <style>
+        .sc{display:none;}
+        .ulTop li{ color:#000}
+        .answerTable .groupTitile{width: 21%;}
+        .answerTable .ulTop{border-bottom:none;}
+        .thirdUlList i{position: relative;bottom: 25px; left: 16px;width:36px;}
+
+        img {max-width: 100%}
+    </style>
+
+</head>
+<body class="bg">
+
+<div class="mb10">
+    <script type="text/javascript" src="https://3wfy-ans.chaoxing.com/passport/allHead.shtml"  charset="utf-8"></script>
+</div>
+
+
+
+
+<style type="text/css">
+    .workTip{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:-2px;right:0px}
+    .testTip{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:-2px;right:0px}
+    .cdataTip{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:-2px;right:0px}
+    .workTipPd{display:none;width:8px;height:8px;background:red;border-radius:8px;position:absolute;top:10px;right:0px}
+    .experience{display:inline-block;padding:0 10px!important;height:28px;border:1px solid #e1e7f0;background: #F6F9FE;text-align:center;line-height:28px;font-size:14px;color:#5C7499;border-radius: 30px;margin-left: 20px;}
+    .experience:hover{opacity:0.7}
+    .US{ display: inline-block;width: 76px;overflow: hidden;height: 40px;white-space: nowrap;text-overflow: ellipsis;line-height: 40px;}
+</style>
+
+<div  class="c-header" >
+    <div class="headerwrap">
+        <div  class="c-menu">
+            <div class="navhide">
+                <span></span>功能导航				</div>
+            <div class="navshow">
+                <ul>
+                    <li><a mode="yiji"  href='/mycourse/studentcourse?courseId=201899035&clazzid=37758971&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=' title="首页">首页</a><label id="mytaskcount"></label></li>
+                    <li><a mode="fuseMode" target="_blank" href="//mobilelearn.chaoxing.com/widget/pcpick/stu/index?courseId=201899035&jclassId=37758971" title="任务">任务</a></li>
+                    <li><a 																				href="/moocAnalysis/statistics-std?courseId=201899035&classId=37758971&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc="
+                    >统计</a></li>
+                    <li><a onclick="rmWorkDot('37758971','cdata',this);"  href="/coursedata?classId=37758971&courseId=201899035&type=1&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=" data = "/coursedata?classId=37758971&courseId=201899035&type=1&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=" title="资料">资料</a><i class="cdataTip"></i></li>
+                    <li><a mode="fuseMode"   href="/schoolCourseInfo/getNotifyList?courseId=201899035&classId=37758971&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=" title="通知">通知</a></li>
+
+                    <li><a  onclick="rmWorkDot('37758971','work',this);"  href="javascript:;" data="/work/getAllWork?classId=37758971&courseId=201899035&isdisplaytable=2&mooc=1&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=" title="作业">作业  </a><i class="workTip"></i></li>
+                    <li><a mode="yiji" onclick="rmWorkDot('37758971','exam',this);"  class="current"   href="javascript:;" data="/exam/test?classId=37758971&courseId=201899035&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=" title="考试">考试 </a><i class="testTip"> </i></li>
+
+                    <li><a mode="fuseMode"  href="/bbscircle/grouptopic?courseId=201899035&clazzid=37758971&showChooseClazzId=37758971&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=" title="讨论">讨论</a></li>
+
+
+
+
+
+
+
+
+
+                    <li>
+                        <a href="/mycourse/studentcourse?courseId=201899035&clazzid=37758971&ut=s&enc=e87d9f3bbb985f670c51c810077e576d&cpi=71682741&openc=&v=2"
+                           class="experience" style="border-radius: 30px;font-size:14px;padding:0">体验新版</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h1>
+				<span title="临床分子生物学检验" >
+					                        <a  href="javascript:;"  onclick="$('#tpsubmit').submit();">
+							临床分子生物学检验
+                        </a>
+									</span>
+            <span class="articleschool" style="text-decoration: none;">
+					<span title="临床分子生物学检验" >
+						<font color="#333">
+							<span title=""></span>
+						</font>&nbsp;
+													<a href="/coursestar?courseId=201899035&clazzId=37758971&edit=false" >课程评价</a>
+											</span>
+				</span>
+        </h1>
+        <form id="tpsubmit"   action="/course/201899035.html" target="_blank"   method="post">
+            <input type="hidden" name="edit" value="false"></input>
+        </form>
+
+    </div>
+</div>
+<input type="hidden" id="cid" value="37758971">
+
+<script>
+    if ($(".navshow ul li").length > 11) {
+        $(".navshow ul li").css("margin-left", "4px");
+        $(".navshow ul li a").css("padding", "2px 5px");
+    }
+    if ($(".navshow ul li").length == 11) {
+        $(".navshow ul li").css("margin-left", "5px");
+    }
+    var courseApp = "0";
+    if (courseApp == "2") {
+        $(".navshow ul li").css("margin-left", "6px");
+    }
+
+    $('.navhide span').click(function () {
+
+        $(this).parent().hide(0,function(){
+            $('.navshow').show();
+            $('.navshow').animate({'margin-right':0 + 'px'},400);
+        });
+    });
+    $('.navshow span').click(function(){
+        $('.navhide').show();
+        $(this).parent().animate({'margin-right':-980 + 'px'},400,function(){
+        });
+    });
+    var hasWorkDot=false;
+    var hasExamDot=false;
+    var hasCourseDataDot=false;
+    //待批作业、待批考试红点数据加载
+    var redDot = function(){
+        jQuery.ajax({
+            type: "get",
+            url : "/api/workTestPendingNew",
+            data: {
+                classIds:$("#cid").val()
+            },
+            success: function(data){
+                var json= jQuery.parseJSON(data)[0];
+                if('s'=='s') {
+                    if(json.hasWorkMsg){
+                        $(".workTip").css("display","inline-block");
+                        hasWorkDot=true;
+                    }
+                    if(json.hasExamMsg){
+                        $(".testTip").css("display","inline-block");
+                        hasExamDot=true;
+                    }
+                    if(json.hasCourseDataMsg){
+                        $(".cdataTip").css("display","inline-block");
+                        hasCourseDataDot=true;
+                    }
+                }
+            }
+
+        });
+    }
+    $(function(){
+        var yiji = "false";
+        var fuseMode = "false";
+        var readyMode = "false";
+
+        if ("true" == yiji) {
+            $(".navshow").find("li a").each(function(index, ele){
+                var type = $(this).attr("mode");
+                if (type != "yiji") {
+                    $(this).attr("target", "");
+                    $(this).attr("href", "javascript:;");
+                    $(this).removeAttr("onclick");
+                    $(this).click(function(){
+                        alert("访问高峰时段，此功能暂时关闭");
+                    });
+                }
+            });
+        } else if ("true" == fuseMode) {
+            $(".navshow").find("li a").each(function(index, ele){
+                var type = $(this).attr("mode");
+                if ("fuseMode" == type) {
+                    $(this).attr("target", "");
+                    $(this).attr("href", "javascript:;");
+                    $(this).removeAttr("onclick");
+                    $(this).click(function(){
+                        alert("访问高峰时段，此功能暂时关闭");
+                    });
+                }
+            });
+        }
+
+        if ('s' == 's' && "true" != readyMode) {
+            setTimeout('redDot()',1000);
+        }
+
+        if($(".navshow ul li").length==1){
+            $(".navshow").css("display","none");
+        }
+
+    });
+    var rmWorkDot = function(classid,type,me){
+        if ('work' == type) {
+            location.href=$(me).attr("data");
+            return;
+        }
+        if('exam'==type && !hasExamDot){
+            location.href=$(me).attr("data");
+            return;
+        }
+        if('cdata'==type && !hasCourseDataDot){
+            location.href=$(me).attr("data");
+            return;
+        }
+
+        jQuery.ajax({
+            type: "get",
+            dataType: "json",
+            url : "/api/removeRedDot",
+            data: {
+                classId:classid,
+                type:type
+            },
+            success: function(data){
+                if(data && data.status){
+                    //success
+                    location.href=$(me).attr("data");
+                }
+            }
+
+        });
+
+        //location.href=$(me).attr("data");
+    }
+
+</script>
+
+
+<div class="wrap1000 clearfix con">
+    <div  class="width1100_smile">
+        <div class="RightCon" id="RightCon">
+            <div class="radiusBG">
+                <div class="CeYan" id="ZyBottom">
+                    <div class="CyTop">
+                        <p class="Reback fr"><i></i>
+                            <a title="" href="javascript:void(0)" class="RebackA "  onclick="location.href='/exam/test?courseId=201899035&classId=37758971&ut=s&examsystem=0&cpi=71682741&openc=';" >返回</a>
+                        </p>
+                        <ul class="ul01">
+                            <li class="cur"><a href="javascript:void(0)">细菌的分子生物学检验</a><b></b></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" id="stuCpi" value="71682741"/>
+                    <input type="hidden" id="isStudent" value="true"/>
+                    <div class="CyTop1" style="position:relative;border:none;padding:0px;">
+                        <p clsdd="fl" style="font-size:14px;">
+                            <span>姓名：<i style="color:#333;">王锟</i></span>&nbsp;&nbsp;
+                            <span>班级：<i style="color:#333;">2018级医学检验技术本科3、4班</i></span>&nbsp;&nbsp;
+                            <span>
+						    																	</span>
+                        </p>
+
+                    </div>
+
+                    </br>
+
+                    <div class="Cy_TItle1">
+                        <h2>一、单选题
+                            （题数：35，共&nbsp;100.0&nbsp;分）
+                        </h2>
+                    </div>
+                    <div class="CyBottom">
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">1</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">结核杆菌耐利福平的相关基因是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm1" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="b52a4c725bfd4248bd5d404b3780948b" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >rrs</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rpsL</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >embB</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">ropB</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >pncA</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">2</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">细菌菌株分子分型的“金标准”是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm2" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="e48e6d3ebcd04158b29845481da2487f" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >PCR-RFLP</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >荧光定量PCR技术</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">脉冲场凝胶电泳</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >随机扩增多态性DNA技术</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >PCR-SSCP技术</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">3</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">结核分枝杆菌的基因组特征是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm3" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="5749c883063f47b99ee712192e11019f" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >单链DNA</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >单负链RNA</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">双链DNA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >单正链RNA单正链RNA双聚体</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >单正链RNA</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">4</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">PCR法检测淋病奈瑟菌的靶序列不包括（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm4" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="4ec57b6d84ef4b1391fcd68acd2f8d0a" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">编码泵蛋白的基因</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >16SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >隐蔽性质粒cppB区</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >染色体基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >胞嘧啶DNA甲基转移酶基因</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">5</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">下列关于细菌感染性疾病的分子生物学检验说法错误的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm5" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="d28108b44db542c2adcaf7b5be241d32" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >可以实现对感染细菌的广谱快速检测</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >可以检测病原菌耐药基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >可以检测不能或不易培养、生长缓慢的病原菌</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">其检验技术都是PCR及其衍生技术</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >可以对细菌进行基因分型</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">6</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">耐乙胺丁醇分子机制与以下哪个基因突变有关（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm6" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="287dd834610240b3a5f253ba8cf50ed4" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >rpsL</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >ropB</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">embB</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >pncA</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">7</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">结核杆菌耐氟喹诺酮类药物的分子机制是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm7" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="1f81043602714668943e5e37fc7c1784" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">gyrA基因突变</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rpsL基因突变</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >ropB基因突变</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >embB基因突变</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG基因突变</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">8</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">下列不是目前用于O157:H7型大肠埃希菌分子生物学检验方法的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm8" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="f8a077a9f8f64981bcb1b2e82867965c" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >实时定量PCR</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >基因芯片技术</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">DNA测序</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >多重PCR</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >常规PCR</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">9</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">inhA基因的突变与下列哪种药的耐药性相关（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm9" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="623b82aeb6ed495ba418b6f759ae0a8c" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >利福平</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >链霉素</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >乙胺丁醇</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">异烟肼</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >吡嗪酰胺</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">10</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">目前基于MALDI-TOF-MS进行细菌鉴定的主要标志是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm10" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="bf498ec9255040f794508dfaab89d150" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >丰度较高的管家基因</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >16SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >IS6110</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">特异性保守蛋白-核糖体蛋白</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">11</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">结核杆菌的分子生物学检验临床意义中不包括（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm11" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="6cddfd4266f4455e924575b8352411f1" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >耐药检测</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >鉴别诊断</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >疗效评价</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >快速诊断</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">早期诊断</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">12</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">淋病艾瑟菌基因组结构特征正确的是（4.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm12" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="4.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="f80a13af9bd04fdb99ee743e04cc932d" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >含4411个开放阅读框(ORF)</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >同本属其他细菌(如脑膜炎球菌)的同源性较低</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">没有操纵子这种具有共同启动子的基因簇</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >G+C含量高达65.6%</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >大小为4.4Mb</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">13</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">属于等温扩增技术的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm13" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="2d8aec991b4c40a4b7ccf4024f7a436b" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >PCR-RFLP</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >基因芯片技术</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >荧光定量PCR技术</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >PCR-SSCP技术</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">SDA技术</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">14</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">与异烟肼耐药无关的基因是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm14" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="4e44e8e74b73499db02f6e3183aa45fb" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">embB</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >kasA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >inhA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >ahpC</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">15</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">细菌感染分子生物学检验的检验对象是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm15" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="782c93fe18084ab384abd93f5629516e" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >测定血清中病原体蛋白含量</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >测定血清中抗原抗体</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >测定血清中蛋白酶活性</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">测定样本中核酸含量</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >镜检病原体形态</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">16</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">美国食品药品监督管理局规定用于检测尿液标本中淋病奈瑟菌的方法是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm16" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="8d69db29db404d488c66307ff622d7fe" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >抗酸染色镜检</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >动物接种</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >革兰染色镜检</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">淋病奈瑟菌16SrRNA基因检查</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >ELISA</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">17</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">可以用来分辨16SrRNA基因不能鉴别的非常接近的菌种和种内菌株的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm17" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="e9803d0f41fe48f6913614e6296a1954" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">16S-23SrRNA基因</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >65000抗原基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >23SrRNA基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >18SrRNA基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >penA基因</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">18</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">结核杆菌耐药基因中其功能与16SrRNA相关的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm18" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="3de3969f6fbc442abfe5b8b038073f8f" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >rpoB</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rpsL</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">rrs</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >TlyA</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">19</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">属于肠出血性大肠埃希菌O157:H7毒力基因的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm19" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="b9f6722072224fefae1b89384aa7bc76" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >hlyA</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rfbEO157</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">stx1</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >eaeA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >Sakai</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">20</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">患者进行抗结核治疗2个月后检出结核杆菌的rpoB基因耐药突变,建议患者更换的药物是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm20" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="dff0c1ab16e546b7bcce58b6467f1446" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">利福平</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >吡嗪酰胺</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >左氧氟沙星</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >链霉素</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >乙胺丁醇</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">21</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">目前最常用的TB分子检测方法是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm21" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="576c4f77ef9048d6a49df9bad96d8e7b" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >LPA</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA chip</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >SDA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >PCR</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">real-time PCR</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">22</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">目前细菌表型分型的方法不包括（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm22" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="54ddc4fd867a4bee8191ae73e8519679" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">分子分型</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >血清学分型</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >生化分型</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >抗生素敏感性分型</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >噬菌体分型</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">23</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">结核分枝杆菌耐吡嗪酰胺的突变基因是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm23" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='B' />
+                                    <input type="hidden"  name="qid" id="qid" value="24682fedf3d94caba2c30055253cfa5c" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >rrs与rpsL</a>
+                                        </div>
+                                    </li>                                                                                                                                   											   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">pncA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >embB</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >gyrA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rpoB</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											B
+    										</span>
+                                <span>
+												我的答案：B
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">24</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">链霉素的结合靶点是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm24" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="23f9f85c9c6a4fd4a4864063d4e41c5a" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >糖基转移酶</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA旋转酶</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >NADH</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA依赖RNA聚合酶</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">核糖体</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">25</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">被称为细菌“分子化石”的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm25" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="0e106d7f94324df6beab394fb1157d8d" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >rpoB</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rfbEO157</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">16SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >IS6110插入序列</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >fliCH7</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">26</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">淋病奈瑟菌耐青霉素的分子机制与以下哪组基因有关（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm26" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="56850cc609154377b3525ea0954b0fb1" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">penA和ponA</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >gyrA和parC</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG和inhA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >rrs和rpsL</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >gyrA和gyrB</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">27</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">下列分子不是细菌感染性疾病分子生物学检验技术的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm27" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='D' />
+                                    <input type="hidden"  name="qid" id="qid" value="b8e99ed40d894644b961f96965973a69" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >PFGE</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >PCR-SSCP</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >RAPD</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">ELISA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >real-time PCR</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											D
+    										</span>
+                                <span>
+												我的答案：D
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">28</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">适用于大规模的性病普查检测淋病奈瑟菌的分子生物学方法是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm28" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='B' />
+                                    <input type="hidden"  name="qid" id="qid" value="f9a21736fadc4379a23095cc6c56e8ee" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >实时荧光定量PCR</a>
+                                        </div>
+                                    </li>                                                                                                                                   											   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">LCR</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >PCR</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA测序</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >常规PCR</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											B
+    										</span>
+                                <span>
+												我的答案：B
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">29</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">以SDA技术检测结核杆菌时扩增靶点是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm29" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="3a90742d061942e482acbb9b19cbf18e" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >IS6110和15SrRNA</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >SDA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >IS6110和18SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >IS6110和5SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">IS6110和16SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">30</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">与耐链霉素相关的结核杆菌靶基因是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm30" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="7c7ff31a1c324a1a819c0b8b7fa1cfb0" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >pncA</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >ropB</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">rpsL和rrs</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >embB</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">31</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">氟喹诺酮类药物主要作用靶位是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm31" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="50391af86fe64aee944d0327fc02f1ed" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">DNA旋转酶</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >吡嗪酰胺酶</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA依赖RNA聚合酶</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >泵蛋白</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >糖基转移酶</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">32</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">下列不是目前用于O157:H7性大肠埃希菌分子生物学检测靶基因的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm32" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="63419256fe644ac88219099ecbc9cac9" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >黏附因子基因</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >溶血素基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >志贺毒素基因</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >抗原编码基因</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">16SrRNA</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">33</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">下列关于淋病奈瑟菌的分子生物学检测正确的是（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm33" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='C' />
+                                    <input type="hidden"  name="qid" id="qid" value="77df0c827dcd4c91a5e3b6c94dea1bf9" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >cppB基因在某些淋病奈瑟菌株中拷贝数较高,可导致假阳性</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >omp3和opa基因相对于其他靶基因位点发生重组的频率较高</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">采用多个靶基因进行PCR检测可提高敏感性</a>
+                                    </div>
+                                </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >以胞嘧啶DNA甲基转移酶基因为扩增靶序列,是早期应用于PCR的靶点之一,敏感性较高,但是存在假阳性结果</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >以PorA假基因为靶基因扩增敏感度和特异性较低</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											C
+    										</span>
+                                <span>
+												我的答案：C
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">34</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">淋病奈瑟菌耐大环内酯的分子机制与以下哪个基因有关（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm34" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='A' />
+                                    <input type="hidden"  name="qid" id="qid" value="f35791c9589f4cef84675b6304054bc1" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default">erm</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                   <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >embB</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >ropB基因突变</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >katG</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >gyrA</a>
+                                    </div>
+                                </li>                                                                                                                        </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											A
+    										</span>
+                                <span>
+												我的答案：A
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                        <!--单选题开始-->
+                        <div class="TiMu"  style="position:relative">
+                            <div class="Cy_TItle clearfix">
+                                <i class="fl">35</i>
+                                <div class="fl clearfix" style="line-height: 35px; font-size: 14px;padding-right:15px;width:795px;color:#333">pncA基因突变与下列哪种酶活性改变相关（2.8分）</div>
+                            </div>
+                            <ul class="Cy_ulTop">
+
+                                <form  action="http://fanyapbl.fy.chaoxing.com/questionError/addQuestion" method="post" id="questionErrorForm35" target="_blank">
+                                    <input type="hidden"  name="courseId" value="201899035" />
+                                    <input type="hidden"  name="type" id="type" value="0" />
+                                    <input type="hidden"  name="easy" id="easy" value="1"/>
+                                    <input type="hidden"  name="score" id="score" value="2.8" />
+                                    <input type="hidden"  name="chapterId" id="chapterId" value="0" />
+                                    <input type="hidden"  name="myanswer" id="myanswer" value='E' />
+                                    <input type="hidden"  name="qid" id="qid" value="bb0aac0a10c54c44adcae140d8537005" />
+
+                                    <li>
+                                        <i class="fl">A、</i>
+                                        <div class="clearfix">
+                                            <a href="javascript:void(0);" style="cursor:default" >泵蛋白</a>
+                                        </div>
+                                    </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">B、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA旋转酶</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">C、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >DNA依赖RNA聚合酶</a>
+                                    </div>
+                                </li>                                                                                                                                                                                  <li>
+                                    <i class="fl">D、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default" >糖基转移酶</a>
+                                    </div>
+                                </li>                                                                                                                                   											   <li>
+                                    <i class="fl">E、</i>
+                                    <div class="clearfix">
+                                        <a href="javascript:void(0);" style="cursor:default">吡嗪酰胺酶</a>
+                                    </div>
+                                </li>                                                                                                                         </ul>
+                            <div class="Py_answer clearfix">
+                                <i class="fr dui"></i>        										    																					<span>
+    											正确答案：
+    											E
+    										</span>
+                                <span>
+												我的答案：E
+										</span>
+
+
+                                </form>
+
+                            </div>
+                        </div>
+                        <!--单选题结束-->
+
+                    </div>
+                    <!--新版答题卡-->
+                    <div class="DtButton"><a href="javascript:void(0)"></a></div>
+                    <div class="scrolllist" id="s2" style="display:none;z-index:9999;">
+                        <a class="abtn aleft" href="#left" title="上移"></a>
+                        <div class="imglist_w" style="overflow-y:auto !important">
+                            <ul class="imglist">
+                                <li>
+                                    <p class="Listbt">
+                                        一、
+                                        单选题
+
+                                    </p>
+                                    <div class="Listcon">
+                                        <span class="Listda"><a href="javascript:void(0);" id="01" class="dasure">1</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="02" class="dasure">2</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="03" class="dasure">3</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="04" class="dasure">4</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="05" class="dasure">5</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="06" class="dasure">6</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="07" class="dasure">7</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="08" class="dasure">8</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="09" class="dasure">9</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="010" class="dasure">10</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="011" class="dasure">11</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="012" class="dasure">12</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="013" class="dasure">13</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="014" class="dasure">14</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="015" class="dasure">15</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="016" class="dasure">16</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="017" class="dasure">17</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="018" class="dasure">18</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="019" class="dasure">19</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="020" class="dasure">20</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="021" class="dasure">21</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="022" class="dasure">22</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="023" class="dasure">23</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="024" class="dasure">24</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="025" class="dasure">25</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="026" class="dasure">26</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="027" class="dasure">27</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="028" class="dasure">28</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="029" class="dasure">29</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="030" class="dasure">30</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="031" class="dasure">31</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="032" class="dasure">32</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="033" class="dasure">33</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="034" class="dasure">34</a></span>
+                                        <span class="Listda"><a href="javascript:void(0);" id="035" class="dasure">35</a></span>
+                                    </div>
+                                </li>
+                            </ul><!--imglist end-->
+                        </div>
+                        <a class="abtn aright" href="#right" title="下移"></a>
+                    </div><!--scrolllist end-->
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" >
+
+    function add (num){
+        var courseId=$("#courseId").val();  // 课程id
+        var type=$("#type").val();   // 试题类型
+        var easy=$("#easy").val();   // 试题难易度，如果大于3或者小于0  就会默认为2
+        var content=$("#content").val();
+        var answer=$("#answer").val();
+        var score=$("#score").val();  // 试题分数
+        var chapterId=$("#chapterId").val(); //  章节id，如果小于0  设为默认值0
+        var myanswer=$("#myanswer").val(); //学生答案
+        var qid=$("#qid").val();  // 试题在a系统的id
+
+
+        $("#questionErrorForm"+num).submit();
+
+    }
+
+</script>
+</body>
+</html>
