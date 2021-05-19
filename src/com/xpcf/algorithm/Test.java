@@ -129,31 +129,11 @@ public class Test {
 //    }
 
     public static void main(String[] args) {
-//        MyFrame myFrame = new MyFrame();
-//        for (;;) {
-//            try {
-//                TimeUnit.MILLISECONDS.sleep(50);
-//            } catch (InterruptedException e) {
-//                e.printStackTrace();
-//            }
-//            myFrame.repaint();
-//        }
-
-        Integer[] nums = new Integer[1_000_000_000];
-        int n = nums.length;
-
-        long s = System.currentTimeMillis();
-        for (int i = 0; i < nums.length; i++) {
-//            System.out.println("1");
-        }
-        System.out.println("-------------\r\n\r\n");
-        System.out.println(System.currentTimeMillis() - s);
-        s = System.currentTimeMillis();
-        for (int i = 0; i < n; i++) {
-//            System.out.println("1");
-        }
-        System.out.println("-------------\r\n\r\n");
-        System.out.println(System.currentTimeMillis() - s);
+        int[][] a = {
+                {2, 2, 2},
+                {2, 2, 2}
+        };
+        System.out.println();
     }
 
 
