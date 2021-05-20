@@ -9,6 +9,7 @@ import java.io.*;
 import java.util.*;
 
 /**
+ * stream 只需要关闭最外层的
  * @author XPCF
  * @version 1.0
  * @date 5/14/2021 2:44 AM
@@ -51,7 +52,6 @@ public class SearchTimu {
             bufferedWriter.newLine();
         }
         bufferedWriter.close();
-        fileWriter.close();
     }
 
     /**
@@ -68,6 +68,7 @@ public class SearchTimu {
             String[] s = curLine.split("  ");
             map.put(s[0], s[1]);
         }
+        bufferedReader.close();
         return map;
     }
 
@@ -85,7 +86,6 @@ public class SearchTimu {
             sb.append(s).append("\n");
         }
         bufferedReader.close();
-        fileReader.close();
 
 
         Document doc = Jsoup.parse(sb.toString());
