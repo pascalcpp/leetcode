@@ -1,6 +1,7 @@
 package com.xpcf.algorithm.other;
 
-import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author XPCF
@@ -10,11 +11,12 @@ import java.util.Arrays;
 public class NextPermutation_P31 {
 
     public static void main(String[] args) {
-        int[] ints = {2, 4, 6};
-        Arrays.sort(ints);
-        for (int anInt : ints) {
-            System.out.println(anInt);
-        }
+
+        Set set = new HashSet();
+        set.add("asdasd");
+        set.add("zzzz");
+        set.add("mark");
+        System.out.println(set);
     }
 
     public void nextPermutation(int[] nums) {
