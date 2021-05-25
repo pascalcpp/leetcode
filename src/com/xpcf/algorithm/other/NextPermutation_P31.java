@@ -1,8 +1,5 @@
 package com.xpcf.algorithm.other;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * @author XPCF
  * @version 1.0
@@ -12,12 +9,7 @@ public class NextPermutation_P31 {
 
     public static void main(String[] args) {
 
-        Set set = new HashSet();
-        set.add("asdasd");
-        set.add("zzzz");
-        set.add("mark");
-        System.out.println(set);
-        set.remove()
+
     }
 
     public void nextPermutation(int[] nums) {
