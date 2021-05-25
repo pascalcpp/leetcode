@@ -17,6 +17,7 @@ public class NextPermutation_P31 {
         set.add("zzzz");
         set.add("mark");
         System.out.println(set);
+        set.remove()
     }
 
     public void nextPermutation(int[] nums) {

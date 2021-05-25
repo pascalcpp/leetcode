@@ -1,5 +1,7 @@
 package com.xpcf.algorithm.other;
 
+import java.util.HashSet;
+
 /**
  * @author XPCF
  * @version 1.0
@@ -7,8 +9,10 @@ package com.xpcf.algorithm.other;
  */
 public class RotatedArray_P33 {
     public static void main(String[] args) {
-        RotatedArray_P33 p = new RotatedArray_P33();
-        p.search(new int[]{1, 3, 5}, 1);
+        HashSet<Object> set = new HashSet<>();
+        set.forEach((o) -> {
+
+        });
     }
 
     public int search(int[] nums, int target) {
