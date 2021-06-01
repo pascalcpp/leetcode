@@ -11,9 +11,7 @@ import java.util.List;
 public class CombinationSum_P39 {
 
     public static void main(String[] args) {
-        CombinationSum_P39 p = new CombinationSum_P39();
-        p.combinationSum(new int[]{2, 3, 6, 7}, 7);
-        System.out.println(p.ans);
+        ArrayList<Integer> list = new ArrayList<>();
     }
 
     private int[] candidates;
