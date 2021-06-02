@@ -1,6 +1,10 @@
 package com.xpcf.algorithm;
 
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
 /**
  * @author XPCF
  * @version 1.0
@@ -129,7 +133,18 @@ public class Test {
 //    }
 
     public static void main(String[] args) {
-
+        List<Integer> ints = Arrays.asList(1, 6, 4, 2, 3, 5, 6, 9, 8, 7, 0);
+        ints.stream().filter(x -> x % 2 == 0).forEach(System.out::print); // 遍历输出符合条件的元素
+        System.out.println("\n----");
+        Optional<Integer> first = ints.stream().filter(x -> x % 2 == 0).findFirst();// 匹配第一个
+        for (int i = 0; i < 10; i++) {
+            ints.parallelStream().filter(x -> x % 2 == 0).findAny().ifPresent(s -> System.out.println(s));
+        }
+//        boolean single = ints.stream().filter(x -> x > 6).anyMatch(x -> x % 2 == 1);
+//
+//        System.out.println("匹配第一个值：" + first.get());
+//        System.out.println("匹配任意一个值：" + any.get());
+//        System.out.println("集合中，大于6的元素里是否存在大于6的值：" + single);
     }
 
 
