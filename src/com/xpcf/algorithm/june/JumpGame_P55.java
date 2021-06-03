@@ -11,12 +11,16 @@ public class JumpGame_P55 {
         int maxIndex = 0;
         int n = nums.length;
         for (int i = 0; i < n; i++) {
-            int jumpIndex = nums[i] + i;
-            if (jumpIndex > maxIndex) {
-                maxIndex = jumpIndex;
+
+            if (i <= maxIndex) {
+                maxIndex = Math.max(maxIndex, nums[i] + 1);
+                if (maxIndex >= n - 1) {
+                    return true;
+                }
             }
+
         }
-        return maxIndex == n - 1;
+        return false;
     }
 
 }
