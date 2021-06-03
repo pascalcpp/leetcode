@@ -13,13 +13,17 @@ public class JumpGame_P55 {
         for (int i = 0; i < n; i++) {
 
             if (i <= maxIndex) {
-                maxIndex = Math.max(maxIndex, nums[i] + 1);
+                maxIndex = Math.max(maxIndex, nums[i] + i);
                 if (maxIndex >= n - 1) {
                     return true;
                 }
+                continue;
             }
 
+            return false;
+
         }
+
         return false;
     }
 
